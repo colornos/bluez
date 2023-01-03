@@ -1,19 +1,22 @@
-install bluez:
+Install bluez:
 Check recent bluez version from http://www.bluez.org/ and change the version number accordingly. (Note: Enter commands that continue on the next line in one go) 
 # wget https://www.kernel.org/pub/linux/bluetooth/bluez-5.XX.tar.xz
+sudo git clone https://github.com/colornos/bluez.git
 Extract:
-# tar xvf bluez-5.XX.tar.xz
+sudo tar xvf bluez-5.XX.tar.xz
 
 get the necessary libs:
-# apt-get install libusb-dev libdbus-1-dev libglib2.0-dev automake libudev-dev libical-dev libreadline-dev
+sudo apt-get install libusb-dev libdbus-1-dev libglib2.0-dev automake libudev-dev libical-dev libreadline-dev
 
 configure and build SW:
-# cd bluez-5.XX
-# ./configure --disable-systemd
-# make
-# make install
+cd bluez-5.XX
+sudo ./configure --disable-systemd
+sudo make
+sudo make install
 
+Optional:
 Then copy gatttool manually into the /usr/local/bin directory:
 
 # cp attrib/gatttool /usr/local/bin/
+Reference:
 https://keptenkurk.wordpress.com/2016/02/07/connecting-the-medisana-bs440-bluetooth-scale/
