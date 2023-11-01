@@ -1,7 +1,7 @@
 Install bluez:
 Check recent bluez version from http://www.bluez.org/ and change the version number accordingly. (Note: Enter commands that continue on the next line in one go) 
 
-# wget https://www.kernel.org/pub/linux/bluetooth/bluez-5.XX.tar.xz
+# wget https://www.kernel.org/pub/linux/bluetooth/bluez-5.69.tar.xz
 #OR
 sudo git clone https://github.com/colornos/bluez.git
 
@@ -12,7 +12,7 @@ sudo tar xvf bluez-5.XX.tar.xz
 sudo apt-get install -y python3-dev libusb-dev libdbus-1-dev libglib2.0-dev libudev-dev libical-dev libreadline-dev
 
 #configure and build SW:
-cd bluez-5.XX
+cd bluez-5.69
 sudo ./configure --disable-systemd
 sudo make
 sudo make install
