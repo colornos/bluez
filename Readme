@@ -6,7 +6,7 @@ Check recent bluez version from http://www.bluez.org/ and change the version num
 sudo git clone https://github.com/colornos/bluez.git
 
 Extract:
-sudo tar xvf bluez-5.XX.tar.xz
+sudo tar xvf bluez-5.69.tar.xz
 
 #Get the necessary libs:
 sudo apt-get install -y python3-dev libusb-dev libdbus-1-dev libglib2.0-dev libudev-dev libical-dev libreadline-dev
